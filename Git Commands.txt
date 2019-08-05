@@ -1,0 +1,87 @@
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo
+$ git init
+Initialized empty Git repository in D:/dev2 project/AddTwo/.git/
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$ git config --global user.name "pritesh848"
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$ git config --global user.email "pritesh848@gmail.com"
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$ git remote add origin https://github.com/pritesh848/folder.git
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$ git remote -v
+origin  https://github.com/pritesh848/folder.git (fetch)
+origin  https://github.com/pritesh848/folder.git (push)
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .classpath
+        .gitignore
+        .project
+        .settings/
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .classpath
+        new file:   .gitignore
+        new file:   .project
+        new file:   .settings/org.eclipse.jdt.core.prefs
+        new file:   src/Addition.java
+        new file:   src/LearningUseofboolean.java
+
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$ git commit -m "Update project on Git"
+[master (root-commit) 1baa568] Update project on Git
+ 6 files changed, 70 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .gitignore
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 src/Addition.java
+ create mode 100644 src/LearningUseofboolean.java
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$ git push origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 1.51 KiB | 220.00 KiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0)
+To https://github.com/pritesh848/folder.git
+ * [new branch]      master -> master
+
+pritesh@DESKTOP-NDCGJVT MINGW64 /d/dev2 project/AddTwo (master)
+$
